@@ -1,0 +1,153 @@
+@use "./utils" as *;
+@use "./variables" as *;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  outline: none;
+  // border: 1px solid $primary;
+}
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  color: $gray-500;
+  font-family: $font-inter;
+  font-size: 16px; // Base font size
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray-500;
+  }
+}
+a {
+  color: $gray-500;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-inter;
+  font-weight: 600 !important;
+  color: $gray-500;
+  line-height: 120%;
+}
+h1 {
+  font-size: 3.5rem !important; // 56px
+  @include extra-large-desktop {
+    font-size: 4rem !important; // 64px
+  }
+  @include tablet {
+    font-size: 3rem !important; // 48px
+  }
+  @include mobile {
+    font-size: 2.5rem !important; // 40px (fixed from 2)
+  }
+  @include extra-small {
+    font-size: 2rem !important; // 32px
+  }
+}
+h2 {
+  font-size: 3rem !important; // 48px
+  @include extra-large-desktop {
+    font-size: 3.5rem !important; // 56px
+  }
+  @include tablet {
+    font-size: 2.5rem !important; // 40px (fixed from 2)
+  }
+  @include mobile {
+    font-size: 2rem !important; // 32px
+  }
+  @include extra-small {
+    font-size: 1.75rem !important; // 28px
+  }
+}
+h3 {
+  font-size: 2.5rem !important; // 40px
+  @include extra-large-desktop {
+    font-size: 3rem !important; // 48px
+  }
+  @include tablet {
+    font-size: 2rem !important; // 32px
+  }
+  @include mobile {
+    font-size: 1.75rem !important; // 28px
+  }
+  @include extra-small {
+    font-size: 1.5rem !important; // 24px
+  }
+}
+h4 {
+  font-size: 2rem !important; // 32px
+  @include extra-large-desktop {
+    font-size: 2.5rem !important; // 40px
+  }
+  @include tablet {
+    font-size: 1.75rem !important; // 28px
+  }
+  @include mobile {
+    font-size: 1.5rem !important; // 24px
+  }
+  @include extra-small {
+    font-size: 1.25rem !important; // 20px
+  }
+}
+h5 {
+  font-size: 1.5rem !important; // 24px
+  @include extra-large-desktop {
+    font-size: 1.75rem !important; // 28px
+  }
+  @include tablet {
+    font-size: 1.25rem !important; // 20px
+  }
+  @include mobile {
+    font-size: 1.25rem !important; // 20px
+  }
+  @include extra-small {
+    font-size: 1rem !important; // 16px
+  }
+}
+h6 {
+  font-size: 1.25rem !important; // 20px
+  @include extra-large-desktop {
+    font-size: 1.5rem !important; // 24px
+  }
+  @include tablet {
+    font-size: 1rem !important; // 16px
+  }
+  @include mobile {
+    font-size: 1rem !important; // 16px
+  }
+  @include extra-small {
+    font-size: 0.875rem !important; // 14px
+  }
+}
+p {
+  @include text-regular-medium;
+  font-family: $font-inter;
+  color: $gray-200;
+  @include extra-large-desktop {
+    font-size: 1.125rem; // 18px
+  }
+  @include tablet {
+    font-size: 0.9375rem; // 15px
+  }
+  @include mobile {
+    font-size: 0.875rem; // 14px
+  }
+  @include extra-small {
+    font-size: 0.8125rem; // 13px
+  }
+}

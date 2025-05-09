@@ -1,0 +1,26 @@
+/* --------------------------------- colors --------------------------------- */
+// Gray
+$gray-500: #1f1f1f;
+$gray-400: #2d3436;
+$gray-300: #636e72;
+$gray-200: #b2bec3;
+$gray-100: #dfe6e9;
+
+/* ------------------------------- Typography ------------------------------- */
+$font-inter: "Inter", sans-serif;
+
+/* -------------------------------- utilities ------------------------------- */
+$button-border-radius: 50px;
+
+/* --------------------------------- Spacing -------------------------------- */
+$section-padding-large: 100px;
+$section-padding-medium: 80px;
+$section-padding-small: 40px;
+
+/* ------------------------------- Breakpoints ------------------------------ */
+$breakpoint-xs: 360px;
+$breakpoint-sm: 640px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1440px;
+$breakpoint-xxl: 1920px;

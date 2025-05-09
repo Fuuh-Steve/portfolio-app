@@ -1,0 +1,188 @@
+@use "./variables" as *;
+
+@mixin extra-small {
+  @media (max-width: #{$breakpoint-xs}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$breakpoint-sm}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-md}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: #{$breakpoint-lg}) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: #{$breakpoint-xl}) {
+    @content;
+  }
+}
+@mixin extra-large-desktop {
+  @media (min-width: #{$breakpoint-xxl}) {
+    @content;
+  }
+}
+
+// Typography mixins
+@mixin text-large-extra-bold {
+  font-size: 1.25rem; // 20px
+  font-weight: 800;
+  line-height: 150%;
+}
+@mixin text-large-bold {
+  font-size: 1.25rem; // 20px
+  font-weight: 700;
+  line-height: 150%;
+}
+@mixin text-large-semi-bold {
+  font-size: 1.25rem; // 20px
+  font-weight: 600;
+  line-height: 150%;
+}
+@mixin text-large-medium {
+  font-size: 1.25rem; // 20px
+  font-weight: 500;
+  line-height: 150%;
+}
+@mixin text-large-normal {
+  font-size: 1.25rem; // 20px
+  font-weight: 400;
+  line-height: 150%;
+}
+@mixin text-large-light {
+  font-size: 1.25rem; // 20px
+  font-weight: 300;
+  line-height: 150%;
+}
+@mixin text-medium-extra-bold {
+  font-size: 1.125rem; // 18px
+  font-weight: 800;
+  line-height: 150%;
+}
+@mixin text-medium-bold {
+  font-size: 1.125rem; // 18px
+  font-weight: 700;
+  line-height: 150%;
+}
+@mixin text-medium-semi-bold {
+  font-size: 1.125rem; // 18px
+  font-weight: 600;
+  line-height: 150%;
+}
+@mixin text-medium-medium {
+  font-size: 1.125rem; // 18px
+  font-weight: 500;
+  line-height: 150%;
+}
+@mixin text-medium-normal {
+  font-size: 1.125rem; // 18px
+  font-weight: 400;
+  line-height: 150%;
+}
+@mixin text-medium-light {
+  font-size: 1.125rem; // 18px
+  font-weight: 300;
+  line-height: 150%;
+}
+@mixin text-regular-extra-bold {
+  font-size: 1rem; // 16px
+  font-weight: 800;
+  line-height: 150%;
+}
+@mixin text-regular-bold {
+  font-size: 1rem; // 16px
+  font-weight: 700;
+  line-height: 150%;
+}
+@mixin text-regular-semi-bold {
+  font-size: 1rem; // 16px
+  font-weight: 600;
+  line-height: 150%;
+}
+@mixin text-regular-medium {
+  font-size: 1rem; // 16px
+  font-weight: 500;
+  line-height: 150%;
+}
+@mixin text-regular-normal {
+  font-size: 1rem; // 16px
+  font-weight: 400;
+  line-height: 150%;
+}
+@mixin text-regular-light {
+  font-size: 1rem; // 16px
+  font-weight: 300;
+  line-height: 150%;
+}
+@mixin text-small-extra-bold {
+  font-size: 0.875rem; // 14px
+  font-weight: 800;
+  line-height: 150%;
+}
+@mixin text-small-bold {
+  font-size: 0.875rem; // 14px
+  font-weight: 700;
+  line-height: 150%;
+}
+@mixin text-small-semi-bold {
+  font-size: 0.875rem; // 14px
+  font-weight: 600;
+  line-height: 150%;
+}
+@mixin text-small-medium {
+  font-size: 0.875rem; // 14px
+  font-weight: 500;
+  line-height: 150%;
+}
+@mixin text-small-normal {
+  font-size: 0.875rem; // 14px
+  font-weight: 400;
+  line-height: 150%;
+}
+@mixin text-small-light {
+  font-size: 0.875rem; // 14px
+  font-weight: 300;
+  line-height: 150%;
+}
+@mixin text-tiny-extra-bold {
+  font-size: 0.75rem; // 12px
+  font-weight: 800;
+  line-height: 150%;
+}
+@mixin text-tiny-bold {
+  font-size: 0.75rem; // 12px
+  font-weight: 700;
+  line-height: 150%;
+}
+@mixin text-tiny-semi-bold {
+  font-size: 0.75rem; // 12px
+  font-weight: 600;
+  line-height: 150%;
+}
+@mixin text-tiny-medium {
+  font-size: 0.75rem; // 12px
+  font-weight: 500;
+  line-height: 150%;
+}
+@mixin text-tiny-normal {
+  font-size: 0.75rem; // 12px
+  font-weight: 400;
+  line-height: 150%;
+}
+@mixin text-tiny-light {
+  font-size: 0.75rem; // 12px
+  font-weight: 300;
+  line-height: 150%;
+}
